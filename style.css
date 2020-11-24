@@ -7,7 +7,7 @@ body{
     background-color: #2f3035;
     background-image: url(assets/background.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
 }
 
