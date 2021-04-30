@@ -9,7 +9,19 @@
 				
 			</v-col>
 		</v-row>
-		<v-row class="ma-3 mx-md-16" id="tutorial">
+		<v-row class="ma-3 mx-md-16" align="center">
+			<v-col cols="12" lg="8">
+				<v-card height="100%" class="d-flex align-center elevation-10">
+					<span class="pa-4 px-sm-15">
+						<h1 style="color:#9a2a29" class="text-center text-h3 font-weight-bold py-5">Why I love making projects</h1>
+						<h2 class="text-center text-h6 font-weight-regular px-5 pb-5">
+							Projects are an important part of my extracurriculars because I believe 
+							in the hands=on experience and well as sense of accomplishment after tackling
+							a difficult problem.
+							</h2>
+						</span>
+					</v-card>
+				</v-col>
 			<v-col cols="12" md="6" class="d-flex text-center align-center justify-center px-sm-10">
 				<span>
 					<h2 style="color:#9a2a29">Project V.A.R.I.S</h2>

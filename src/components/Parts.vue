@@ -18,12 +18,9 @@
         <v-card-text class="py-0">
           <v-row>
             <span>
-            <v-col cols="12" sm="6" v-for="item in parts" :key="item.name">
-              <v-sheet class="d-flex text-center text-h5">{{item.name}}</v-sheet>
-              <span>{{item.desc}}</span>
-
-              <v-img max-height="20vh" src="require(`../assets/Home/Intro.jpg`)" class="mx-auto my-4 d-flex d-md-none" eager/>              
-              </v-col>
+			<v-col cols="12" md="11" class="pa-0 d-none d-md-flex">
+				<v-img src="~../assets/Projects/resume.jpg" max-height="100vh" eager />
+			</v-col>
               </span>
               </v-row>
         </v-card-text>
@@ -38,9 +35,6 @@ export default {
   data() {
     return {
       partshow: false,
-      parts: [
-        { name: "9V - Barrel", desc: "9V connecter to power uno" }
-      ]
     };
   },
 };

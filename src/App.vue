@@ -23,7 +23,7 @@
       <span class="ml-auto mr-4 d-none d-sm-flex">
         <v-btn text to="/">HOME</v-btn>
         <v-btn text to="/workshop">PROJECTS</v-btn>
-        <v-btn text to="/about">WORK EXPERIENCE</v-btn>
+        <v-btn text to="/about">EXPERIENCE</v-btn>
         <v-btn text @click.stop="partshow = true"><Parts /></v-btn>
       </span>
       <!-- Menu -->
