@@ -2,14 +2,11 @@
 	<v-container fluid py-0>
 		<v-row class="row1" align="center">
 			<v-col class="text-center">
-				<span class="d-block text-h2 text-sm-h1 font-weight-regular mb-8">Workshops</span>
+				<span class="d-block text-h2 text-sm-h1 font-weight-regular mb-8">Projects</span>
 				<span
 					class="d-block text-h5 text-md-h4 mb-10 font-weight-regular"
-				>Hands on experience for everyone</span>
-				<!-- $vuetify.goTo scrolls down to a specific point -->
-				<div class="landing-page-buttons">
-					<Parts />
-				</div>
+				>Hands on experience from project-based learning</span>
+				
 			</v-col>
 		</v-row>
 		<v-row class="ma-3 mx-md-16" id="tutorial">
@@ -126,9 +123,7 @@
 </template>
 
 <script>
-import Parts from "../components/Parts";
 export default {
-	components: { Parts },
 	data() {
 		return {};
 	},
@@ -147,7 +142,7 @@ export default {
 	background-image: linear-gradient(rgb(154 42 41 / 50%), rgb(154 42 41 / 50%)),
 		url("~../assets/Tutorial/Tutorial-intro.jpg");
 	background-size: cover;
-	height: 100vh;
+	height: 50vh;
 	color: white;
 }
 </style>

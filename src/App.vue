@@ -2,16 +2,14 @@
   <v-app>
     <!-- NavBar -->
     <v-app-bar app :class="scrlpoint ? 'scrlpoint' : 'scrl0'" short>
-      <router-link to="/" class="logo" tag="img" :src="scrlpoint ? logob : logow" />
-      <!-- using normal text-weight as looks weird otherwise -->
-      <!-- hiding sumobot text at sm (600-960) as it interferes -->
+      <!--<router-link to="/" class="logo" tag="img" :src="scrlpoint ? logob : logow" />
       <router-link
         to="/"
         tag="h1"
         style="cursor:pointer"
         :class="scrlpoint ? '' : 'white--text font-weight-regular'"
         v-if="$vuetify.breakpoint.mdAndUp || $vuetify.breakpoint.xsOnly"
-      >Sumobot</router-link>
+      >Sumobotfdasf</router-link> -->
       <!-- <h1
 				style="cursor:pointer"
 				@click.stop=""
@@ -24,10 +22,9 @@
       <!-- Menu -->
       <span class="ml-auto mr-4 d-none d-sm-flex">
         <v-btn text to="/">HOME</v-btn>
-        <v-btn text to="/about">ABOUT</v-btn>
-        <v-btn text to="/competition">COMPETITION</v-btn>
-        <v-btn text to="/workshop">Workshop</v-btn>
-        <v-btn text @click.stop="showtimeline = true">Timeline</v-btn>
+        <v-btn text to="/workshop">PROJECTS</v-btn>
+        <v-btn text to="/about">WORK EXPERIENCE</v-btn>
+        <v-btn text @click.stop="showtimeline = true">RESUME</v-btn>
       </span>
       <!-- Menu -->
     </v-app-bar>
@@ -52,10 +49,6 @@
         <span>About</span>
         <v-icon>mdi-information-outline</v-icon>
       </v-btn>
-      <v-btn to="/competition">
-        <span>Competition</span>
-        <v-icon>mdi-trophy</v-icon>
-      </v-btn>
       <v-btn to="/workshop">
         <span>Workshop</span>
         <v-icon>mdi-book</v-icon>
@@ -78,48 +71,6 @@
       <v-sheet color="#9a2a29" width="100%" :class="menu ? 'pb-10 pb-sm-0' : ''">
         <!-- Row allows columns to switch in mobile view -->
         <v-row justify="center" class="text-center py-2 py-sm-6">
-          <!-- Location Column -->
-          <v-col cols="12" sm="4" lg="2">
-            <span class="d-flex align-center justify-center text-h5 font-weight-medium mb-3">
-              <v-icon size="28" class="pr-2">mdi-map-marker</v-icon>LOCATION
-            </span>
-            <span v-intersect="onIntersect">
-              McMaster University
-              <br />1280 Main Street West
-              <br />Hamilton, Ontario
-              <br />L8S 4L8
-            </span>
-          </v-col>
-          <!-- Location Column -->
-          <v-divider inset class="mx-1 d-sm-none" />
-          <!-- Find Us Column -->
-          <v-col cols="12" sm="4" lg="3">
-            <span
-              class="d-flex align-center justify-center text-h5 font-weight-medium mb-3 mb-sm-6"
-            >
-              <v-icon size="28" class="pr-2">mdi-share-variant</v-icon>FIND US
-            </span>
-            <v-btn icon large href="https://www.facebook.com/MacSumobots/" target="_blank">
-              <v-icon>mdi-facebook</v-icon>
-            </v-btn>
-            <v-btn icon large href="https://www.instagram.com/mac_sumobot/" target="_blank">
-              <v-icon>mdi-instagram</v-icon>
-            </v-btn>
-
-            <v-btn icon large href="https://github.com/macsumobot" target="_blank">
-              <v-icon>mdi-github</v-icon>
-            </v-btn>
-            <v-btn
-              icon
-              large
-              href="https://teams.microsoft.com/l/team/19%3ab8cea3145c7547b28582368f44cd6ac7%40thread.tacv2/conversations?groupId=0ccfac0a-7138-44e8-8d9a-209e92c0e3d4&tenantId=44376307-b429-42ad-8c25-28cd496f4772"
-              target="_blank"
-            >
-              <v-icon>mdi-microsoft-teams</v-icon>
-            </v-btn>
-          </v-col>
-          <!-- Find Us Column -->
-          <v-divider inset class="mx-1 d-sm-none" />
           <!-- Conatct Column -->
           <v-col cols="12" sm="4" lg="2">
             <span
@@ -127,27 +78,26 @@
             >
               <v-icon size="28" class="pr-2">mdi-email</v-icon>CONTACT
             </span>
-            Email us at:
+            Email me at:
             <br />
             <a
-              href="mailto:cr_sbot@mcmaster.ca"
+              href="mailto:eddy.che.su@gmail.com"
               target="_blank"
               style="color:white"
-            >cr_sbot@mcmaster.ca</a>
+            >eddy.che.su@gmail.com</a>
           </v-col>
           <!-- Conatct Column -->
         </v-row>
         <v-divider />
-        <!-- Copyright Text -->
+        <!-- Name year Text -->
         <!-- Padding needed for mobile view, when menu present -->
         <v-card-text
           class="pa-2 d-flex justify-center align-center pb-10 pb-sm-2"
           :class="menu ? 'pb-16 pb-sm-2' : ''"
         >
-          <v-icon class="px-1">mdi-copyright</v-icon>
-          {{ new Date().getFullYear() }} — McMaster Sumobot
+          {{ new Date().getFullYear() }} — Eddy Su 
         </v-card-text>
-        <!-- Copyright Text -->
+        <!-- Name year Text -->
       </v-sheet>
     </v-footer>
     <!-- Footer -->
