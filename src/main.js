@@ -12,32 +12,26 @@ const routes = [
 	{
 		path: "*",
 		name: "404",
-		meta: { title: "Sumobot" },
+		meta: { title: "Eddy Su" },
 		component: () => import("./views/Home"),
 	},
 	{
 		path: "/",
 		name: "Home",
-		meta: { title: "Sumobot" },
+		meta: { title: "Eddy Su" },
 		component: () => import("./views/Home"),
 	},
 	{
 		path: "/about",
 		name: "About",
-		meta: { title: "About - Sumobot" },
+		meta: { title: "Eddy Su" },
 		component: () => import("./views/About"),
-	},
-	{
-		path: "/competition",
-		name: "Competition",
-		meta: { title: "Competition - Sumobot" },
-		component: () => import("./views/Competition"),
 	},
 	{
 		path: "/workshop",
 		name: "Workshop",
-		meta: { title: "Workshop - Sumobot" },
-		component: () => import("./views/Tutorial"),
+		meta: { title: "Eddy Su" },
+		component: () => import("./views/Projects"),
 	},
 ];
 

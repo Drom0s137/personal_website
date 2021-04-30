@@ -250,7 +250,7 @@ export default {
   background-size: cover;
   background-position-y: 80%;
   background-position-x: 30%;
-  height: 100vh;
+  height: 50vh;
   color: white;
   position: relative;
 }

@@ -24,7 +24,7 @@
         <v-btn text to="/">HOME</v-btn>
         <v-btn text to="/workshop">PROJECTS</v-btn>
         <v-btn text to="/about">WORK EXPERIENCE</v-btn>
-        <v-btn text @click.stop="showtimeline = true">RESUME</v-btn>
+        <v-btn text @click.stop="partshow = true"><Parts /></v-btn>
       </span>
       <!-- Menu -->
     </v-app-bar>
@@ -57,6 +57,7 @@
         <span>Timeline</span>
         <v-icon>mdi-clock</v-icon>
       </v-btn>
+      
     </v-bottom-navigation>
     <!-- Mobile Menu -->
     <!-- Page Views -->
@@ -107,19 +108,15 @@
 
 <script>
 // Images imported to use in navbar
-import logow from "./assets/logow.png";
-import logob from "./assets/logob.png";
-import Timeline from "./components/Timeline";
+import Parts from "./components/Parts";
 export default {
-  components: { Timeline },
+  components: { Parts },
   data() {
     return {
       scrlpoint: false,
-      logow: logow,
-      logob: logob,
       menu: false,
       intersect: false,
-      showtimeline: false,
+      partshow: false,
       snackbar: true,
     };
   },
@@ -170,12 +167,6 @@ span .v-btn {
 /* Padding removed to make menu flush with screen edge */
 .v-app-bar >>> .v-toolbar__content {
   padding: 0 !important;
-}
-.logo {
-  width: 60px;
-  padding: 4px 10px;
-  margin-right: 10px;
-  cursor: pointer;
 }
 .v-item-group >>> .v-slide-group__wrapper {
   margin-right: -10px;
